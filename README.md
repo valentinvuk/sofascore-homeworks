@@ -1,1 +1,1 @@
-# sofascore-hw2
+# Sofascore Academy Homeworks
