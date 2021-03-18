@@ -1,0 +1,175 @@
+.title {
+  display: flex;
+  justify-content: center;
+  animation: fadeIn ease-in-out 0.9s;
+}
+
+.title img {
+  width: 100px;
+  background-color: white;
+  background-size: 100% 100px;
+}
+
+body {
+  background-image: url(background.png);
+  background-repeat: repeat;
+  background-size: 143px 100px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.login-form-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  max-height: 80%;
+  animation: fadeIn ease-in-out 1s;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Barlow Condensed", sans-serif;
+  border-radius: 25px;
+  background: #fb7c42;
+  background: linear-gradient(325deg, #f1601c 0%, #fb7c42 36%, #ec956d 100%);
+  height: 400px;
+  width: 300px;
+  box-shadow: #0000004f 0px 4px 12px;
+}
+@media screen and (max-width: 832px) {
+  .login-form {
+    height: 500px;
+  }
+  .input-container label {
+    font-size: 20px;
+  }
+  .input-container input {
+    font-size: 20px;
+  }
+  .input-container input:focus ~ label,
+  .input-container input:valid ~ label {
+    top: -16px;
+    font-size: 16px;
+  }
+  body {
+    background-size: 143px 100px;
+    background-position: -30px 50px;
+  }
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-container label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
+  color: rgba(53, 53, 53, 0.774);
+  transition: all 0.5s ease-in-out;
+}
+.input-container input {
+  border: 0;
+  border-bottom: 1px solid wheat;
+  background: transparent;
+  width: 200px;
+  padding: 6px 0 5px 0;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-family: "Barlow Condensed", sans-serif;
+}
+.input-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid whitesmoke;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  top: -12px;
+  font-size: 12px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 60px;
+  width: 60px;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+
+  box-shadow: #0000004f 0px 2px 6px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  padding-right: 8px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid rgb(255, 255, 255);
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: background 0.25s ease-out;
+  background: rgb(255, 255, 255);
+}
+
+.btn:hover > .arrow {
+  transition: border-left 0.25s ease-out;
+  border-left: 25px solid #f1601c;
+}
+.btn:focus {
+  border: none;
+  outline: none;
+}
+
+.welcome {
+  color: white;
+  font-style: italic;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.welcome span {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+.form-footer {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.form-footer p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
