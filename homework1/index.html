@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HOOPS</title>
+    <!-- For responsivity -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="basketball.png"/>
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+      <!-- Header container for logo, using header tag for page readers -->
+    <header class="title">
+      <img src="basketball.png" alt="logo"/>
+    </header>
+    <!-- Container for login form section  -->
+    <div class="login-form-wrapper">
+        <!-- Actual login form section -->
+      <div class="login-form">
+        <p class="welcome">Welcome to the<br><span>HOOPS</span></br></p>
+        <div class="input-container">
+          <input type="mail" required="" />
+          <label>E-Mail</label>
+        </div>
+        <div class="input-container">
+            <!-- Using password to show * * * when user types -->
+          <input type="password" required="" />
+          <label>Password</label>
+        </div>
+        <div class="form-footer">
+          <p>Forgot password?</p>
+          <button type="button" class="btn">
+              <!-- Div for making a play/log in type shape using css-->
+              <div class="arrow"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
