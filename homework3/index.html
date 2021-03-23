@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="logoAndSearch">
+        <h1>Pokedex</h1>
+        <button onclick="onPageClick(0)">Back</button>
+        <button onclick="onPageClick(1)">Next</button>
+
+        <input type="text" size="20" id="searchPokemon" />
+        <button id="search-button">Search</button>
+        <button id="favorite-button">My favourites</button>
+      </div>
+      <div id="poke-wrapper" class="page-wrapper"></div>
+    </div>
+  </body>
+</html>
