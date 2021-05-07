@@ -1,0 +1,188 @@
+.app {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .app {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  .addform {
+    width: 90%;
+    align-items: center;
+  }
+  .todo-form {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .todolist {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+  }
+  .todo-input {
+    width: 60%;
+  }
+  .filters-container {
+    width: 90%;
+  }
+  .todowrapper {
+    width: 90% !important;
+  }
+}
+
+.header {
+  width: 90vw;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  letter-spacing: 2px;
+}
+
+.todo-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.todo-form img {
+  padding-left: 10px;
+  fill: white;
+  height: 30px;
+}
+
+.todo-input {
+  color: #282c34;
+  border: none;
+  border-bottom: 2px solid #282c34;
+  background-color: transparent;
+  height: 28px;
+  padding-left: 5px;
+  outline: none;
+}
+
+.green-tick {
+  filter: invert(84%) sepia(51%) saturate(599%) hue-rotate(34deg)
+    brightness(94%) contrast(94%);
+}
+
+.img-button {
+  cursor: pointer;
+}
+
+.red-x {
+  filter: invert(21%) sepia(85%) saturate(4671%) hue-rotate(348deg)
+    brightness(106%) contrast(105%);
+}
+
+.addform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85px;
+}
+
+.add-button {
+  background-color: white;
+  color: #282c34;
+  border: 1px solid transparent;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  padding-block: 3px;
+  padding-inline: 5px;
+  border-radius: 2px;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out,
+    border 200ms ease-in-out;
+}
+.add-button:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.todolist {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.todowrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  padding-block: 15px;
+  border-bottom: 1px solid white;
+}
+
+.todowrapper:last-child {
+  border: none;
+}
+
+.todowrapperbuttons {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: flex-end;
+}
+
+.mini {
+  cursor: pointer;
+  height: 20px;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.content {
+  display: flex;
+  cursor: pointer;
+}
+
+.filters-container button {
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.filters-container {
+  color: white;
+  padding-block: 10px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  width: 100%;
+}
+.filter-button {
+  color: white;
+}
+.filters button {
+  font-size: 14px;
+  margin-inline: 5px;
+}
+
+.active {
+  color: greenyellow;
+}
